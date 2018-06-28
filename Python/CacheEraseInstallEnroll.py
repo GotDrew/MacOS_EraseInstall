@@ -1,5 +1,5 @@
 #!/usr/bin/python
-## Import libraries for basic command line functions
+# Import libraries for basic command line functions
 import os
 
 # Enable this in live....
