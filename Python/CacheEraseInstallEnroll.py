@@ -1,11 +1,11 @@
 #!/usr/bin/python
-# Import libraries for basic command line functions
-import os
+## Import libraries for basic command line functions
+import os, time, sys
 
-# Enable this in live....
+# Enable this in live... or if you dont like your computer
 live = False
 
-# Check OS is ready to install...
+# Check OS is cached...
 if not os.path.exists("/private/var/Jamf/OS/Current"):
     print "Current doesn't exist so we're out of here..."
     if live: sys.exit()
@@ -16,7 +16,6 @@ qaPkgName = "QA"                    # whatever you want to name it
 qaPkg = qaFolder+qaPkgName+".pkg"   # inclues path
 osFolder = "/private/var/Jamf/OS/Current/"  # folder caching the OS Installer
 osInstallerFlags = " --rebootdelay 1 --nointeraction --eraseinstall --agreetolicense --installpackage "
-
 
 # Prep the QuickAdd Package for the erase install functions
 if os.path.exists(qaFolder):
