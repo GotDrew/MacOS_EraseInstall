@@ -3,11 +3,12 @@
 import os, sys
 
 # Enable this in live... or if you dont like your computer
-live = False
+live = True
 
 # Vars
 if live:
 	folder="/private/var/Jamf/OS/Current/"
+	print (os.path.exists(folder))
 	if not os.path.exists(folder):
 		print "Current doesn't exist so we're out of here..."
 		if live: sys.exit()
