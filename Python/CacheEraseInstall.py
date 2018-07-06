@@ -3,7 +3,7 @@
 import os, sys, time
 
 # Enable this in live... or if you dont like your computer
-live = True
+live = False
 
 # Vars
 if live:
