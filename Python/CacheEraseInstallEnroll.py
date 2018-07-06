@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 ## Import libraries for basic command line functions
-# os is cool... nfi about the others 
 import commands, os, sys, subprocess
 # Enable this in live....
 live = True
