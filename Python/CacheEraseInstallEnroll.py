@@ -1,9 +1,9 @@
 #!/usr/bin/python
-
 ## Import libraries for basic command line functions
 import commands, os, sys, subprocess
+
 # Enable this in live....
-live = True
+live = False
 
 # Check OS is ready to install...
 if not os.path.exists("/private/var/Jamf/OS/Current"):
