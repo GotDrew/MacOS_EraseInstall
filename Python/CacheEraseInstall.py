@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # Import libraries for basic command line functions
-import os, sys
+import os, sys, time
 
 # Enable this in live... or if you dont like your computer
-live = False
+live = True
 
 # Vars
 if live:
@@ -21,5 +21,6 @@ file = file.replace(" ", "\ ") # fix the string for running commands
 
 # Run the update!
 print "Running the file located here: "+folder+file
-if live: os.system(folder+file+"/Contents/Resources/startosinstall --rebootdelay 1 --nointeraction ‑‑eraseinstall ‑‑agreetolicense && killall 'Self Service'")
+time.sleep(10)
+if live: os.system(folder+file+'/Contents/Resources/startosinstall --nointeraction --eraseinstall --agreetolicense && killall "Self Service"')
 else: print "We're testing Mate, should've worked though..."
