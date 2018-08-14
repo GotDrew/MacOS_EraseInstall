@@ -11,7 +11,7 @@ I've changed it over to Python because _"Learning..."_
 
 
 ## Setup
-I'm using Jamf to push out the MacOS installer.app to _"/private/var/Jamf/OS/"_
+I'm using Jamf to push out the MacOS installer.app to _"/private/var/Jamf/OS/"_, hence the names "Cache___".
 Then I run **CacheSetup** which clears the old installer, creates a "Current" folder and moves the installer app into it.
 If using the **Erase Install Enroll**, the **enrolment package** will need to be added to a folder _"/private/var/Jamf/QA/"_.
 
